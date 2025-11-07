@@ -1,0 +1,6 @@
+com/example/api/models/Image.class
+com/example/api/testdata/TestDataBuilder.class
+com/example/api/tests/ProductsApiTest.class
+com/example/api/tests/BaseApiTest.class
+com/example/api/models/Product.class
+com/example/api/models/ApiResponse.class

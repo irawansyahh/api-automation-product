@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.api.tests.ProductsApiTest" time="19.682" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/asani/Downloads/api-automation-products/target/test-classes:/Users/asani/Downloads/api-automation-products/target/classes:/Users/asani/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/asani/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/asani/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/asani/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/asani/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/asani/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/asani/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/asani/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/asani/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/asani/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/asani/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/asani/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/asani/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/asani/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/asani/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/asani/.m2/repository/io/rest-assured/json-schema-validator/5.3.0/json-schema-validator-5.3.0.jar:/Users/asani/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/asani/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/asani/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/asani/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/asani/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/asani/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/asani/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/asani/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/asani/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/asani/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/asani/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar:/Users/asani/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/asani/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/asani/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/asani/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/asani/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/asani/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/asani/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/asani/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/asani/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/asani/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/asani/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/asani/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/asani/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/asani/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/asani/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/asani/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/asani/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/asani/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/asani/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/Users/asani/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/asani/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/Users/asani/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/asani/Downloads/api-automation-products/target/surefire/surefirebooter-20251107210025752_3.jar /Users/asani/Downloads/api-automation-products/target/surefire 2025-11-07T21-00-25_385-jvmRun1 surefire-20251107210025752_1tmp surefire_0-20251107210025752_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/asani/Downloads/api-automation-products/target/test-classes:/Users/asani/Downloads/api-automation-products/target/classes:/Users/asani/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/asani/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/asani/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/asani/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/asani/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/asani/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/asani/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/asani/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/asani/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/asani/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/asani/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/asani/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/asani/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/asani/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/asani/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/asani/.m2/repository/io/rest-assured/json-schema-validator/5.3.0/json-schema-validator-5.3.0.jar:/Users/asani/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/asani/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/asani/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/asani/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/asani/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/asani/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/asani/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/asani/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/asani/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/asani/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/asani/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar:/Users/asani/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/asani/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/asani/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/asani/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/asani/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/asani/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/asani/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/asani/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/asani/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/asani/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/asani/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/asani/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/asani/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/asani/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/asani/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/asani/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/asani/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/asani/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/asani/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/Users/asani/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/asani/.m2/repository/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar:/Users/asani/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/asani"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/asani/Downloads/api-automation-products"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/asani/Downloads/api-automation-products/target/surefire/surefirebooter-20251107210025752_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="asani"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.0.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/asani/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/_f/z03ctrt95g5d45clfbxvp8zm0000gp/T/"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="/Users/asani/Downloads/api-automation-products"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/asani/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="testGetProducts_CategoriesAndTagsValidation" classname="com.example.api.tests.ProductsApiTest" time="6.183">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakerapi.it/api/v2/products?_quantity=1&_taxes=12&_categories_type=uuid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/8.3.8
+Cache-Control: no-cache, private
+Date: Fri, 07 Nov 2025 14:00:32 GMT
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 59
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Encoding: gzip
+
+{
+    "status": "OK",
+    "code": 200,
+    "locale": "en_US",
+    "seed": null,
+    "total": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Sint iusto eos pariatur unde.",
+            "description": "Labore voluptas sint culpa eos qui est quia. Quae qui sint quo in omnis. Consequatur magni eligendi dicta eos est quos non. Ut non vel dolor mollitia illo consequatur asperiores.",
+            "ean": "4913633364172",
+            "upc": "742680201106",
+            "image": "http://placeimg.com/640/480/tech",
+            "images": [
+                {
+                    "title": "Fugit aliquam eveniet labore.",
+                    "description": "Porro quasi laudantium vitae eum molestiae quidem exercitationem. Et omnis eum non illo reiciendis dolor sunt. Sed repellendus eius fuga laboriosam et molestias.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Quos sit similique eos sunt.",
+                    "description": "Itaque sit repellendus odit dolorem omnis et provident. Voluptas unde voluptate ea. Aut sed officiis voluptas enim consequatur. Cumque officia consequuntur quo ex ut provident.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Et aspernatur illo id rerum.",
+                    "description": "Aspernatur sunt non officiis id vel ut. Odio ea eius maxime dolores quas sed. Autem quam quia veritatis voluptas nisi amet. Et nihil voluptatem ut ducimus dolorem.",
+                    "url": "https://picsum.photos/640/480"
+                }
+            ],
+            "net_price": 2466.38,
+            "taxes": 12,
+            "price": 2762.35,
+            "categories": [
+                "eb874d6d-c6c5-3326-983c-93fb8f204349",
+                "d5ed4cbf-ac7f-38aa-9ecc-a4cfd5395071",
+                "2baf6072-bbea-3d63-8c0c-c21a5e683111",
+                "5701f7d9-25db-3df1-92fa-e81a00aa876e",
+                "abd3218f-45d9-365a-b89c-2c3150f9c68c"
+            ],
+            "tags": [
+                "sunt",
+                "vero",
+                "itaque",
+                "porro",
+                "ullam",
+                "officiis",
+                "vel",
+                "voluptatem"
+            ]
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testPriceCalculation" classname="com.example.api.tests.ProductsApiTest" time="1.992">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakerapi.it/api/v2/products?_quantity=1&_taxes=12&_categories_type=uuid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/8.3.8
+Cache-Control: no-cache, private
+Date: Fri, 07 Nov 2025 14:00:35 GMT
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 58
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Encoding: gzip
+
+{
+    "status": "OK",
+    "code": 200,
+    "locale": "en_US",
+    "seed": null,
+    "total": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Numquam nobis ut totam in.",
+            "description": "Et doloribus quo aut similique doloremque. Asperiores aperiam ratione ratione non soluta. Est nam est laudantium omnis autem beatae deserunt. Quos ut rem consequatur ea.",
+            "ean": "7450672844687",
+            "upc": "853302685599",
+            "image": "http://placeimg.com/640/480/tech",
+            "images": [
+                {
+                    "title": "Odio quia quidem laudantium.",
+                    "description": "Recusandae quos eum laudantium similique. Odio eos ea dolor repudiandae in sunt. Velit voluptas ut deserunt culpa nihil magnam officia. Eos minima unde in ad voluptatibus.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Quia ut natus ex officia.",
+                    "description": "Aut delectus est dolorum voluptatibus quia ut. Nihil minus quis eligendi corrupti eum. Nemo ullam distinctio atque recusandae vitae et.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Ducimus iusto et quam itaque.",
+                    "description": "Iure voluptatem voluptatem molestiae iusto repellendus quasi libero qui. Suscipit nemo dolorem sapiente accusantium. Autem tempore itaque cupiditate ut aut ducimus blanditiis et.",
+                    "url": "https://picsum.photos/640/480"
+                }
+            ],
+            "net_price": 6050.26,
+            "taxes": 12,
+            "price": 6776.29,
+            "categories": [
+                "417793a1-e7a3-31e9-ba29-d2e6fcae760b",
+                "e1969708-5936-3b4e-86ed-48f6707a4bec",
+                "c8276f51-f325-3aa7-a493-05be429affa5",
+                "c43451ab-eb1f-3804-9723-4b3d811263ae",
+                "e5746a7f-fcff-3193-bc93-2708b6a8b108",
+                "7a286c0f-c45c-342a-9253-82ff30a12aad",
+                "8d0b7b7e-d3fd-3b9d-98b2-cb52c389bba0",
+                "41e73bd5-c3f0-3aef-9aa4-a683ff23106d"
+            ],
+            "tags": [
+                "et",
+                "eum",
+                "placeat",
+                "in"
+            ]
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testResponseTime" classname="com.example.api.tests.ProductsApiTest" time="1.985">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakerapi.it/api/v2/products?_quantity=1&_taxes=12&_categories_type=uuid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/8.3.8
+Cache-Control: no-cache, private
+Date: Fri, 07 Nov 2025 14:00:36 GMT
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 57
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Encoding: gzip
+
+{
+    "status": "OK",
+    "code": 200,
+    "locale": "en_US",
+    "seed": null,
+    "total": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Id sunt dolores nemo esse.",
+            "description": "Dolorum sed quidem quae. Porro vero et modi rerum mollitia voluptatem at.",
+            "ean": "3839083221821",
+            "upc": "836706972562",
+            "image": "http://placeimg.com/640/480/tech",
+            "images": [
+                {
+                    "title": "Architecto qui et ut minus.",
+                    "description": "Consequuntur est debitis eum et neque debitis assumenda. Corrupti ut omnis itaque rerum. Odit tempore aut omnis cum qui et et.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Ipsam magni fugit vel a sit.",
+                    "description": "Asperiores asperiores sint et est occaecati nihil quos. Sed nisi sed voluptatem quia. Perferendis aliquid et perspiciatis et accusamus error velit.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "At iure non in.",
+                    "description": "Illo libero est labore quia sequi quo. Doloribus harum voluptates dolorum veritatis ad eos. Inventore tempore possimus distinctio.",
+                    "url": "https://picsum.photos/640/480"
+                }
+            ],
+            "net_price": 965430.45,
+            "taxes": 12,
+            "price": 1081282.1,
+            "categories": [
+                "dee90782-509e-3908-ad49-fa68373a878d",
+                "8a278771-dec0-3864-8f9f-ae3feca36813",
+                "04f64366-b802-3c5f-813f-194ce63c8074",
+                "fa690f87-7895-364c-a35c-efea778c0bda",
+                "842d658d-5b60-3ba0-942c-7817d96d876c",
+                "7c2fc1ed-ad24-33e6-ab58-16e6fd3ea34d",
+                "467ef10e-00f9-3465-acfb-a43a0fb4f3fa",
+                "90ff7faf-d263-36dc-b4cb-83d8542583e5"
+            ],
+            "tags": [
+                "laudantium",
+                "accusamus",
+                "aut",
+                "repellendus",
+                "eveniet"
+            ]
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testProductQuantity" classname="com.example.api.tests.ProductsApiTest" time="1.69">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakerapi.it/api/v2/products?_quantity=1&_taxes=12&_categories_type=uuid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/8.3.8
+Cache-Control: no-cache, private
+Date: Fri, 07 Nov 2025 14:00:38 GMT
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 56
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Encoding: gzip
+
+{
+    "status": "OK",
+    "code": 200,
+    "locale": "en_US",
+    "seed": null,
+    "total": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Adipisci ea et error.",
+            "description": "Tempore molestiae dolores placeat fugiat. Non et vel mollitia eum. Error error praesentium labore. Labore autem tempora repudiandae earum vel.",
+            "ean": "4427130253865",
+            "upc": "332495621881",
+            "image": "http://placeimg.com/640/480/tech",
+            "images": [
+                {
+                    "title": "Et eos nemo error.",
+                    "description": "Esse doloribus libero nobis quo architecto qui dolor. Vitae ea quisquam nam vero ut ab. Eum consequatur saepe laboriosam qui sed.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Dolor et deserunt atque.",
+                    "description": "Consequatur cum est cumque rerum a architecto vel. Sed corporis maxime reprehenderit voluptatem. Omnis qui vero illum magnam error sed. Expedita assumenda facere neque totam deserunt earum magni.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Est velit aut est.",
+                    "description": "Doloribus ea quas vitae esse odit. Doloremque tempore aperiam neque ab. Voluptate quia et aut voluptas sit omnis aliquid.",
+                    "url": "https://picsum.photos/640/480"
+                }
+            ],
+            "net_price": 5166173.58,
+            "taxes": 12,
+            "price": 5786114.41,
+            "categories": [
+                "3c87b75c-4d2a-3876-b4c6-159b37771539",
+                "052d0e51-f5c5-3c16-a199-08051397c2b4",
+                "67e97e6d-4a98-3ba5-9411-84244ed3aa72",
+                "853b68d3-09ac-3c08-bd7a-22780507cad0",
+                "a0c01641-11e8-359b-94dd-0ff537338731",
+                "62037c4d-f306-3781-a749-39d99ae6c377"
+            ],
+            "tags": [
+                "perspiciatis"
+            ]
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProducts_ImagesValidation" classname="com.example.api.tests.ProductsApiTest" time="1.823">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakerapi.it/api/v2/products?_quantity=1&_taxes=12&_categories_type=uuid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/8.3.8
+Cache-Control: no-cache, private
+Date: Fri, 07 Nov 2025 14:00:40 GMT
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 55
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Encoding: gzip
+
+{
+    "status": "OK",
+    "code": 200,
+    "locale": "en_US",
+    "seed": null,
+    "total": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Unde quo voluptas incidunt.",
+            "description": "Consectetur amet dicta ipsa sint. Mollitia id facilis et. Deserunt ea aliquid nihil nesciunt repudiandae. Aspernatur labore exercitationem sunt non omnis.",
+            "ean": "6343117040465",
+            "upc": "176399485163",
+            "image": "http://placeimg.com/640/480/tech",
+            "images": [
+                {
+                    "title": "Tenetur at natus quae non in.",
+                    "description": "Officia non fugiat necessitatibus accusamus est velit qui. Fuga accusantium vero impedit. Aut mollitia velit ad pariatur cum ipsa. Possimus nisi at dolorem facilis consectetur itaque odit accusamus.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Est aut labore a impedit.",
+                    "description": "Sint et adipisci voluptatem earum. Ea explicabo voluptates sunt quis quo beatae. Dicta quidem debitis magni incidunt aut.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Rem ut animi aut et ipsam.",
+                    "description": "Nesciunt dolorem delectus assumenda repellat illo est reprehenderit. Non maiores consectetur aspernatur earum atque sed. Ducimus eos sit veritatis nemo fugiat similique qui.",
+                    "url": "https://picsum.photos/640/480"
+                }
+            ],
+            "net_price": 23115122.61,
+            "taxes": 12,
+            "price": 25888937.32,
+            "categories": [
+                "ee9fe255-3782-3eda-ab0e-b9e53830db92",
+                "d735cf74-6efd-3992-ad49-274d68d45424",
+                "0563e2fc-8f2d-3703-bca0-59207b4429ff",
+                "ce595674-2af5-3cdd-ba68-1c78d228965e",
+                "7def400a-ff78-305c-8e51-1a6cbf85ca73",
+                "64efe48a-3b9e-329b-bc75-a52781ff9bff",
+                "821b4012-7e15-39f0-afd7-cc07a0e66a00",
+                "bdbbdbcd-8efb-35ad-b3f8-b1946ccb2fc1",
+                "967b045c-7ac7-3796-ba01-635a679adb66",
+                "d3edb5a6-7453-3227-a20a-13ecf590d7c7"
+            ],
+            "tags": [
+                "eius",
+                "sint",
+                "sapiente",
+                "nemo",
+                "consectetur",
+                "sed",
+                "voluptas"
+            ]
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProducts_WithRestAssuredDirectValidation" classname="com.example.api.tests.ProductsApiTest" time="2.225">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakerapi.it/api/v2/products?_quantity=1&_taxes=12&_categories_type=uuid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/8.3.8
+Cache-Control: no-cache, private
+Date: Fri, 07 Nov 2025 14:00:42 GMT
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 54
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Encoding: gzip
+
+{
+    "status": "OK",
+    "code": 200,
+    "locale": "en_US",
+    "seed": null,
+    "total": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Culpa nesciunt a aut autem.",
+            "description": "Id sed inventore eum tenetur et et voluptatem. Voluptatem dolorum reiciendis adipisci minima consequuntur. Dolor dolore esse quod modi velit.",
+            "ean": "7842885147103",
+            "upc": "448541510971",
+            "image": "http://placeimg.com/640/480/tech",
+            "images": [
+                {
+                    "title": "Nostrum ut vel sit.",
+                    "description": "Porro ut inventore ipsa consequatur quo qui. Architecto nemo mollitia sed laboriosam excepturi consequatur voluptatem. Cupiditate aut quia quos.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Qui enim odit illo repellat.",
+                    "description": "Error quae sit recusandae et. Pariatur rerum optio debitis assumenda. Nemo doloribus eligendi sit beatae dolor.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Consequatur totam fugiat ea.",
+                    "description": "Dolorem sed ex consequatur id. Omnis quibusdam ea illum minus. Dolores amet dolore aspernatur. Accusamus inventore facilis et qui.",
+                    "url": "https://picsum.photos/640/480"
+                }
+            ],
+            "net_price": 365090922.55,
+            "taxes": 12,
+            "price": 408901833.26,
+            "categories": [
+                "a18b90fd-a296-3458-9568-7ffec4531f00"
+            ],
+            "tags": [
+                "ullam"
+            ]
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProducts_ProductDataValidation" classname="com.example.api.tests.ProductsApiTest" time="1.728">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakerapi.it/api/v2/products?_quantity=1&_taxes=12&_categories_type=uuid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/8.3.8
+Cache-Control: no-cache, private
+Date: Fri, 07 Nov 2025 14:00:44 GMT
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 53
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Encoding: gzip
+
+{
+    "status": "OK",
+    "code": 200,
+    "locale": "en_US",
+    "seed": null,
+    "total": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Dolore ut sed quasi vel.",
+            "description": "Non sit sit quia aut. Velit quia fugit quisquam ipsum alias dolores est. Cupiditate sit iure nemo nihil temporibus sed. Incidunt hic sit dolores et et voluptas non.",
+            "ean": "3092017465078",
+            "upc": "524712211518",
+            "image": "http://placeimg.com/640/480/tech",
+            "images": [
+                {
+                    "title": "Non et magni in eum ut.",
+                    "description": "Molestiae quaerat voluptatum rerum fuga. Consequuntur tempora eum non aut molestias. Qui et consequatur non ut. Error voluptatum recusandae porro dolorem itaque.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Ab enim eum exercitationem.",
+                    "description": "Unde hic numquam iusto repellendus et. Quo provident dolor sit eos eum. Neque consequatur aut numquam voluptas nemo nisi. Iure magni quae nulla.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Eius et ut occaecati facilis.",
+                    "description": "Fuga rem libero laudantium numquam et. Praesentium sint non ducimus quos est ratione. Maiores laudantium dolore eos dolore id neque ducimus provident.",
+                    "url": "https://picsum.photos/640/480"
+                }
+            ],
+            "net_price": 3575924.76,
+            "taxes": 12,
+            "price": 4005035.73,
+            "categories": [
+                "46574bf8-6bf6-39b7-9230-47e657d4d05b",
+                "b6af26ce-8b8c-3df9-bf27-910ff50d46bf",
+                "8205c693-5ba9-3282-8c43-0f20ed8780bf",
+                "d478fa33-3ac4-3b90-a644-b83bc53fad79",
+                "1d491ef5-38c7-3197-ad10-1eb99828e950"
+            ],
+            "tags": [
+                "non",
+                "praesentium",
+                "voluptate",
+                "tempore",
+                "accusantium",
+                "tempore",
+                "minima",
+                "non"
+            ]
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProducts_ShouldReturnValidResponseStructure" classname="com.example.api.tests.ProductsApiTest" time="1.777">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://fakerapi.it/api/v2/products?_quantity=1&_taxes=12&_categories_type=uuid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Powered-By: PHP/8.3.8
+Cache-Control: no-cache, private
+Date: Fri, 07 Nov 2025 14:00:46 GMT
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 52
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Encoding: gzip
+
+{
+    "status": "OK",
+    "code": 200,
+    "locale": "en_US",
+    "seed": null,
+    "total": 1,
+    "data": [
+        {
+            "id": 1,
+            "name": "Quo iste optio ut ullam.",
+            "description": "Quo consequatur asperiores delectus est nesciunt nobis debitis. Aspernatur at corrupti unde quam voluptate nesciunt. Ut corrupti impedit blanditiis natus reiciendis illo quaerat dolorem.",
+            "ean": "2972027500802",
+            "upc": "676228916409",
+            "image": "http://placeimg.com/640/480/tech",
+            "images": [
+                {
+                    "title": "Qui quas ut quis.",
+                    "description": "Numquam quis totam quaerat et ea omnis. Unde omnis culpa sit neque. Explicabo et qui voluptas magni.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Et id est nemo.",
+                    "description": "Et modi blanditiis a eveniet fugiat. Quos eos recusandae amet est quia. Nesciunt magnam pariatur itaque quis eligendi.",
+                    "url": "https://picsum.photos/640/480"
+                },
+                {
+                    "title": "Ab voluptatem at sed.",
+                    "description": "Iure quisquam quo suscipit eum. Consectetur voluptates reiciendis amet nemo ipsa possimus. Et est adipisci expedita labore modi velit. Ipsa nulla et ad quidem.",
+                    "url": "https://picsum.photos/640/480"
+                }
+            ],
+            "net_price": 0.98,
+            "taxes": 12,
+            "price": 1.1,
+            "categories": [
+                "e8515738-c144-3af9-b487-f612a682f44d"
+            ],
+            "tags": [
+                "non",
+                "ex",
+                "et"
+            ]
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+</testsuite>
